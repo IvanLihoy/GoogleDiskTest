@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * Created by hillel on 28.07.17.
  */
 public class Tools {
+
     protected WebDriver driver;
 
     protected void sleep(int timeout) {
