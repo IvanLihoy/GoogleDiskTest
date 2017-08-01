@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class LoginPage extends Tools{
+public class LoginPage extends Tools {
 
     public LoginPage(WebDriver driver){
         this.driver = driver;
