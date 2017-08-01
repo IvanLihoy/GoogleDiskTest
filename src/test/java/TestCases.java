@@ -22,4 +22,11 @@ public class TestCases extends ChromeConfig {
         loginPage.successLogin();
         loginPage.uploadTest();
     }
+
+    @Test(priority = 4)
+    public void removeFileTest(){
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.successLogin();
+        loginPage.removeTest();
+    }
 }

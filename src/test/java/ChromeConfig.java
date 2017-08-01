@@ -5,9 +5,7 @@ import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by hillel on 28.07.17.
- */
+
 public class ChromeConfig {
 
     protected WebDriver driver;
@@ -16,7 +14,7 @@ public class ChromeConfig {
     protected void startChrome(){
         //System.setProperty("webdriver.chrome.driver","/home/hillel/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
