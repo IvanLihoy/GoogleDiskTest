@@ -1,3 +1,4 @@
+import Pages.FilesPage;
 import Pages.LoginPage;
 import org.testng.annotations.Test;
 
@@ -19,14 +20,16 @@ public class TestCases extends ChromeConfig {
     @Test(priority = 3)
     public void uploadFileTest(){
         LoginPage loginPage = new LoginPage(driver);
+        FilesPage filesPage = new FilesPage(driver);
         loginPage.successLogin();
-        loginPage.uploadTest();
+        filesPage.uploadTest();
     }
 
     @Test(priority = 4)
     public void removeFileTest(){
         LoginPage loginPage = new LoginPage(driver);
+        FilesPage filesPage = new FilesPage(driver);
         loginPage.successLogin();
-        loginPage.removeTest();
+        filesPage.removeTest();
     }
 }
