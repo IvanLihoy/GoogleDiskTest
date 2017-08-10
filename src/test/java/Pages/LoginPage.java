@@ -33,7 +33,7 @@ public class LoginPage extends Tools {
         sleep(2);
         pass_field.sendKeys(pass);
         second_next_button.click();
-        sleep(5);
+        sleep(8);
     }
 
     public void successLogin(){

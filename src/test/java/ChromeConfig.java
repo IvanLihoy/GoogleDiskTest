@@ -12,7 +12,7 @@ public class ChromeConfig {
 
     @BeforeTest
     protected void startChrome(){
-        System.setProperty("webdriver.chrome.driver","/home/hillel/chromedriver");
+        //System.setProperty("webdriver.chrome.driver","/home/hillel/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
